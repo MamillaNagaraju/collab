@@ -1,16 +1,19 @@
 package com.face.model;
 
+import java.util.Date;
+
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
+@Entity
 public class Blog {
 	@Id 
 	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	private int blog_id;
 	private String blogTitle;
 	private String blogDescritption;
-	private String Date;
+	private Date time;
 	private String postedBy;
 	private String category;
 	public int getBlog_id() {
@@ -31,11 +34,11 @@ public class Blog {
 	public void setBlogDescritption(String blogDescritption) {
 		this.blogDescritption = blogDescritption;
 	}
-	public String getDate() {
-		return Date;
+	public Date getDate() {
+		return time;
 	}
-	public void setDate(String date) {
-		Date = date;
+	public void setDate(Date date) {
+		time = date;
 	}
 	public String getPostedBy() {
 		return postedBy;

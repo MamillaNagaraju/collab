@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import com.face.model.Blog;
 
 
-@Repository 
+@Repository("blogdao")
 public class BlogdaoImpl  implements Blogdao
 {
 	
@@ -25,7 +25,7 @@ public class BlogdaoImpl  implements Blogdao
 		Session session=sessionFactory.getCurrentSession();
 		date = new Date();
 		String data = date.toString();
-		blog.setDate(data);
+		//blog.setDate(data);
 		session.save(blog);
 		
 		
@@ -46,7 +46,7 @@ public class BlogdaoImpl  implements Blogdao
 		Session session = sessionFactory.getCurrentSession();
 		date = new Date();
 		String data = date.toString();
-		blog.setDate(data);
+		//blog.setDate(data);
 		session.update(blog);
 		
 	}

@@ -9,12 +9,15 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ComponentScan.Filter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.context.annotation.FilterType;
+
 
 @Configuration
-@ComponentScan(basePackages="com.face")
+@ComponentScan(basePackages = { "com.face" }, excludeFilters = { @Filter(type = FilterType.ANNOTATION, value = Configuration.class) })
 public class AppContextConfig {
 	
 	@Bean( name ="dataSource")

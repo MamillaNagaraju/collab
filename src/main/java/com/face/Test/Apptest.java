@@ -3,7 +3,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.AbstractApplicationContext;
 
 import com.face.config.AppContextConfig;
+import com.face.dao.Blogdao;
 import com.face.dao.Regisdao;
+import com.face.model.Blog;
 import com.face.model.Regis;
 public class Apptest {
 	
@@ -14,7 +16,9 @@ public class Apptest {
 	Regisdao Regis=(Regisdao) context.getBean("Regisdao");
 	
 	Regis reg=new Regis();
+Blogdao blog=(Blogdao) context.getBean("blogdao");
 	
+	Blog blo=new Blog();
 	
     reg.setUsername("will");
     reg.setPassword("password@123");
