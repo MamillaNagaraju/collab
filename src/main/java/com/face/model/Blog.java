@@ -6,21 +6,27 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 @Entity
-public class Blog {
+@Table(name="Blogtable1",schema="mn")
+public class Blog 
+{
 	@Id 
 	@GeneratedValue(strategy=GenerationType.SEQUENCE)
-	private int blog_id;
+	
+	private int BBid;
 	private String blogTitle;
 	private String blogDescritption;
-	private Date time;
+	private String cdate;
 	private String postedBy;
 	private String category;
+	
+	
 	public int getBlog_id() {
-		return blog_id;
+		return BBid;
 	}
 	public void setBlog_id(int blog_id) {
-		this.blog_id = blog_id;
+		this.BBid = blog_id;
 	}
 	public String getBlogTitle() {
 		return blogTitle;
@@ -34,11 +40,11 @@ public class Blog {
 	public void setBlogDescritption(String blogDescritption) {
 		this.blogDescritption = blogDescritption;
 	}
-	public Date getDate() {
-		return time;
+	public String getCdate() {
+		return cdate;
 	}
-	public void setDate(Date date) {
-		time = date;
+	public void setCdate(String cdate) {
+		this.cdate = cdate;
 	}
 	public String getPostedBy() {
 		return postedBy;

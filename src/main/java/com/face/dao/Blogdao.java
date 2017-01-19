@@ -6,6 +6,7 @@ package com.face.dao;
 		List<Blog> viewBlogs();
 		void updateBlog(Blog blog);
 		void deleteBlog(int id);
+		public String getBlogByBBid(int id);
 	}
 
 

@@ -7,27 +7,25 @@ import com.face.dao.Blogdao;
 import com.face.dao.Regisdao;
 import com.face.model.Blog;
 import com.face.model.Regis;
+import com.face.model.Queanforum;
 public class Apptest {
 	
 	
 	public static void main (String [] args)
 	{
 		AbstractApplicationContext context=new AnnotationConfigApplicationContext(AppContextConfig.class);
-	Regisdao Regis=(Regisdao) context.getBean("Regisdao");
 	
-	Regis reg=new Regis();
-Blogdao blog=(Blogdao) context.getBean("blogdao");
+/*Blogdao blog=(Blogdao) context.getBean("blogdao");
 	
 	Blog blo=new Blog();
 	
-    reg.setUsername("will");
-    reg.setPassword("password@123");
-    reg.setCity("NY");
-    reg.setMobile("1234567891");
-    reg.setRole("User");
-    
-    Regis.addUser(reg);
-    
-	}
-
+    blo.setBlogDescritption("the description of");
+    blo.setBlogTitle("Description");
+    blo.setCategory("blog");
+    blo.setCdate("26dec2016");
+    blo.setPostedBy("user");
+    blog.addBlog(blo);
+	
+*/
+}
 }
