@@ -32,7 +32,7 @@ Queanforumdao forumdao;
 		HttpHeaders headers = new HttpHeaders();
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
 	 }
-////////get gorum////
+////////get forum////
 	@RequestMapping(value = "/myforum", method = RequestMethod.GET)
 	    public ResponseEntity<List<Queanforum>>listBlogs()
 	    {
@@ -56,6 +56,9 @@ Queanforumdao forumdao;
 			 System.out.println("I am in blog rest delete controller");
 			 forumdao.deleteQuestion(qid);
 			}
+		 
+		 
+		 
                       //update//
 		 @RequestMapping(value="/updateforum", method=RequestMethod.PUT)
 		 public void updateQueanforum(@RequestBody Queanforum forum)
