@@ -17,7 +17,6 @@ import com.face.dao.Queanforumdao;
 import com.face.model.Blog;
 import com.face.model.Queanforum;
 
-
 //-------------------------create user--------------//
 @RestController
 public class QueanforumController {

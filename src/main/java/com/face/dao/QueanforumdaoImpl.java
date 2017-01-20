@@ -34,7 +34,7 @@ public  class QueanforumdaoImpl  implements Queanforumdao{
 		
 
 		
-	
+
 
 	
 	public List<Queanforum> viewQuestions() {

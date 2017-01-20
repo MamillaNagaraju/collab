@@ -14,7 +14,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.face.model.Blog;
 
-
 @Repository("blogdao")
 @EnableTransactionManagement
 @Transactional

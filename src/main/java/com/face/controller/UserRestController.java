@@ -37,7 +37,7 @@ public class UserRestController {
 	    public ResponseEntity<Void> createUser(@RequestBody Regis user,    UriComponentsBuilder ucBuilder) {
 	        System.out.println("Creating User " + user.getUsername());
 	  
-	        
+	       
 	        
 	  
 	        userDAO.addUser(user);

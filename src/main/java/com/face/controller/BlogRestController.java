@@ -23,7 +23,7 @@ public class BlogRestController {
 	Blogdao blogDAO;
 	//---------retrive----//
 	
-	@RequestMapping(value = "/myblog", method = RequestMethod.GET)
+@RequestMapping(value = "/myblog", method = RequestMethod.GET)
 	    public ResponseEntity<List<Blog>>listBlogs()
 	    {
 		System.out.println("am in retrive blog");

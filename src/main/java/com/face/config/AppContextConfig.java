@@ -32,7 +32,6 @@ public class AppContextConfig {
 		return dataSource;
 		
 	}
-	
 	@Autowired
 	@Bean
 	public LocalSessionFactoryBean getSessionFactory(DataSource dataSource)

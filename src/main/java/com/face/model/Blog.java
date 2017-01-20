@@ -21,7 +21,7 @@ public class Blog
 	private String postedBy;
 	private String category;
 	
-	
+
 	public int getBlog_id() {
 		return BBid;
 	}

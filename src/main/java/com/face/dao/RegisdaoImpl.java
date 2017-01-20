@@ -28,7 +28,7 @@ public class RegisdaoImpl implements Regisdao{
 	public void updateUser(Regis user) {
 		Session session=sessionFactory.getCurrentSession();
 		session.saveOrUpdate(user);
-		
+	
 	}
 
 	public void deleteUser(Regis user) {
