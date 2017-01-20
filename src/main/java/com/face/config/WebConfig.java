@@ -23,6 +23,5 @@ public class WebConfig
 		viewResolver.setSuffix(".jsp");
 		
 		return viewResolver;
-	}
-		
+	}		
 }

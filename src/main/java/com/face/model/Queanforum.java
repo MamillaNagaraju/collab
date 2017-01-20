@@ -16,7 +16,7 @@ public class Queanforum {
 	private String questDescription;
 	
 	
-	
+
 	public int getQuestId() {
 		return questId;
 	}

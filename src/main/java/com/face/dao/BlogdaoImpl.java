@@ -24,7 +24,7 @@ public class BlogdaoImpl  implements Blogdao
 	SessionFactory sessionFactory;
 	
 	Date date;
-	
+
 	
 	public void addBlog(Blog blog)
 	{

@@ -11,5 +11,4 @@ public interface Regisdao{
 	public Regis getUserByUsername(String username);
 	public List<Regis> listUsers();
 	
-		
-}
+		}

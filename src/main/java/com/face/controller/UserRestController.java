@@ -31,7 +31,7 @@ public class UserRestController {
 	        return new ResponseEntity<List<Regis>>(users, HttpStatus.OK);
 	    }
 
-	 //-------------------Create a User--------------------------------------------------------
+	 //------------------Create a User--------------------------------------------------------
      
 	    @RequestMapping(value = "/user/", method = RequestMethod.POST)
 	    public ResponseEntity<Void> createUser(@RequestBody Regis user,    UriComponentsBuilder ucBuilder) {

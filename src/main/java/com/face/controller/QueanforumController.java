@@ -32,7 +32,7 @@ Queanforumdao forumdao;
 		HttpHeaders headers = new HttpHeaders();
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
 	 }
-/////////get gorum////
+////////get gorum////
 	@RequestMapping(value = "/myforum", method = RequestMethod.GET)
 	    public ResponseEntity<List<Queanforum>>listBlogs()
 	    {

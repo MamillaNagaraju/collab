@@ -10,5 +10,4 @@ public interface Queanforumdao {
 	void updateQuestion(Queanforum forum);
 	void deleteQuestion(int qid);
 	Queanforum getQuestion(int qid);
-
 }

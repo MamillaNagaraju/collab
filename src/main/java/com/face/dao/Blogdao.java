@@ -9,4 +9,3 @@ package com.face.dao;
 		public String getBlogByBBid(int id);
 	}
 
-

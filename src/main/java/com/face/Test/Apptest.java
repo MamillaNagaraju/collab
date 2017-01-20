@@ -24,8 +24,7 @@ public class Apptest {
     blo.setCategory("blog");
     blo.setCdate("26dec2016");
     blo.setPostedBy("user");
-    blog.addBlog(blo);
-	
+    blog.addBlog(blo);	
 */
 }
 }

@@ -56,7 +56,7 @@ return new ResponseEntity<List<Blog>>(blogs, HttpStatus.OK);
 		 System.out.println("I am in blog rest delete controller");
 		 blogDAO.deleteBlog(bid);
 		}
-	
+	 
 	 //update the blog
 	 @RequestMapping(value="/updateBlog", method=RequestMethod.PUT)
 	 public void updateBlog(@RequestBody Blog blog)
