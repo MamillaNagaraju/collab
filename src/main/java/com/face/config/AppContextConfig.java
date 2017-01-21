@@ -15,7 +15,6 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.context.annotation.FilterType;
 
-
 @Configuration
 @ComponentScan(basePackages = { "com.face" }, excludeFilters = { @Filter(type = FilterType.ANNOTATION, value = Configuration.class) })
 public class AppContextConfig {
