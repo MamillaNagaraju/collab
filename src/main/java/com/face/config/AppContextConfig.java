@@ -19,7 +19,7 @@ import org.springframework.context.annotation.FilterType;
 @ComponentScan(basePackages = { "com.face" }, excludeFilters = { @Filter(type = FilterType.ANNOTATION, value = Configuration.class) })
 public class AppContextConfig {
 	
-	@Bean( name ="dataSource")
+@Bean( name ="dataSource")
 	public DataSource getH2DataSource()
 	{
 		BasicDataSource dataSource=new BasicDataSource();
