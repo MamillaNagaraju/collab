@@ -14,7 +14,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @ComponentScan(basePackages="com.face")
 public class WebConfig 
 {
-	
+
 	@Bean
 	public ViewResolver getViewResolver()
 	{

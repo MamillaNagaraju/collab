@@ -20,7 +20,7 @@ import com.face.model.Regis;
 public class BlogRestController {
 	@Autowired
 	Blogdao blogDAO;
-	//---------retrive----//
+	//---------retrive----/
 	
 @RequestMapping(value = "/myblog", method = RequestMethod.GET)
 	    public ResponseEntity<List<Blog>>listBlogs()

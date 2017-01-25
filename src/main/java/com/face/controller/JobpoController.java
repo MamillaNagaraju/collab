@@ -52,7 +52,6 @@ Jobposdao jobs;
 
 	
 	// delete forum//
-	
 			 @RequestMapping(value="/myjob/{ID}", headers="Accept=applicaton/json",method=RequestMethod.DELETE)
 			 public void deleteUser (@PathVariable ("ID") int id)
 			 {

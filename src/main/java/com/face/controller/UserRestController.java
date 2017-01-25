@@ -18,7 +18,6 @@ import com.face.model.Regis;
 
 @RestController
 public class UserRestController {
-
 	@Autowired
 	Regisdao userDAO;
 	

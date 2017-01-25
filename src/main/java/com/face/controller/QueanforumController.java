@@ -47,7 +47,6 @@ Queanforumdao forumdao;
 	 return new ResponseEntity<List<Queanforum>>(forum, HttpStatus.OK);
 	    }
 	
-	
 	// delete forum//
 	
 		 @RequestMapping(value="/myforum/{QUESTID}", headers="Accept=applicaton/json",method=RequestMethod.DELETE)

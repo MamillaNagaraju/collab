@@ -27,7 +27,6 @@ public class AppContextConfig {
 		dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:XE");
 		dataSource.setUsername("mn");
 		dataSource.setPassword("mn786");
-		
 		return dataSource;
 		
 }
