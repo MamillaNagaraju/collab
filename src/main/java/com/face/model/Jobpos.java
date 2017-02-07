@@ -1,5 +1,7 @@
 package com.face.model;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -10,72 +12,79 @@ import javax.persistence.Table;
 public class Jobpos {
 	@Id@GeneratedValue
 	private int jobId;
-	private String company;
-	private String role;
-    private String skillsRequired;
-	private String eligibilityCriteria;
-	private String ctc;
-	private String dateOfInterview;
-	private String addressOfTheCompany;
-	private String urlOfTheCompany;
+	private String jobtitle;
+	private String jobdesc;
+	private Date posteddate;
+	private String qualification;
+	private String skillreq;
+	private int salary;
+	private String location;
+	private String companyurl;
+	private boolean isAvailable;
 	public int getJobId() {
 		return jobId;
 	}
 	public void setJobId(int jobId) {
 		this.jobId = jobId;
 	}
-	public String getCompany() {
-		return company;
+	public String getJobtitle() {
+		return jobtitle;
 	}
-	public void setCompany(String company) {
-		this.company = company;
+	public void setJobtitle(String jobtitle) {
+		this.jobtitle = jobtitle;
 	}
-	public String getRole() {
-		return role;
+	public String getJobdesc() {
+		return jobdesc;
 	}
-	public void setRole(String role) {
-		this.role = role;
+	public void setJobdesc(String jobdesc) {
+		this.jobdesc = jobdesc;
 	}
-	public String getSkillsRequired() {
-		return skillsRequired;
+	public Date getPosteddate() {
+		return posteddate;
 	}
-	public void setSkillsRequired(String skillsRequired) {
-		this.skillsRequired = skillsRequired;
+	public void setPosteddate(Date posteddate) {
+		this.posteddate = posteddate;
 	}
-	public String getEligibilityCriteria() {
-		return eligibilityCriteria;
+	public String getQualification() {
+		return qualification;
 	}
-	public void setEligibilityCriteria(String eligibilityCriteria) {
-		this.eligibilityCriteria = eligibilityCriteria;
+	public void setQualification(String qualification) {
+		this.qualification = qualification;
 	}
-	public String getCtc() {
-		return ctc;
+	public String getSkillreq() {
+		return skillreq;
 	}
-	public void setCtc(String ctc) {
-		this.ctc = ctc;
+	public void setSkillreq(String skillreq) {
+		this.skillreq = skillreq;
 	}
-	public String getDateOfInterview() {
-		return dateOfInterview;
+	public int getSalary() {
+		return salary;
 	}
-	public void setDateOfInterview(String dateOfInterview) {
-		this.dateOfInterview = dateOfInterview;
+	public void setSalary(int salary) {
+		this.salary = salary;
 	}
-	public String getAddressOfTheCompany() {
-		return addressOfTheCompany;
+	public String getLocation() {
+		return location;
 	}
-	public void setAddressOfTheCompany(String addressOfTheCompany) {
-		this.addressOfTheCompany = addressOfTheCompany;
+	public void setLocation(String location) {
+		this.location = location;
 	}
-	public String getUrlOfTheCompany() {
-		return urlOfTheCompany;
+	public String getCompanyurl() {
+		return companyurl;
 	}
-	public void setUrlOfTheCompany(String urlOfTheCompany) {
-		this.urlOfTheCompany = urlOfTheCompany;
+	public void setCompanyurl(String companyurl) {
+		this.companyurl = companyurl;
+	}
+	public boolean isAvailable() {
+		return isAvailable;
+	}
+	public void setAvailable(boolean isAvailable) {
+		this.isAvailable = isAvailable;
 	}
 	
-	
-	
-	
+
+
+
 	
 
 }

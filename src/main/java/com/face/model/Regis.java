@@ -19,8 +19,43 @@ public class Regis {
 	private String role;
 	private String city;
 	private String mobile;
+	private boolean isonline;
+	private String state;
+	private String country;
+	private boolean enabled;
+	private String emailid;
 	
 	
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	public boolean isEnabled() {
+		return enabled;
+	}
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
+	}
+	public String getEmailid() {
+		return emailid;
+	}
+	public void setEmailid(String emailid) {
+		this.emailid = emailid;
+	}
+	public boolean isIsonline() {
+		return isonline;
+	}
+	public void setIsonline(boolean isonline) {
+		this.isonline = isonline;
+	}
 	public long getUserId() {
 		return userId;
 	}

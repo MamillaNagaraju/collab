@@ -10,5 +10,7 @@ public interface Regisdao{
 	public void deleteUser(Regis user);
 	public Regis getUserByUsername(String username);
 	public List<Regis> listUsers();
+	public  Regis logincheck(Regis ud);
+	
 	
 		}

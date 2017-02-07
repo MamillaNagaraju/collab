@@ -2,8 +2,11 @@ package com.face.dao;
 
 import java.util.List;
 
+
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -53,7 +56,20 @@ public class RegisdaoImpl implements Regisdao{
 		System.out.println(users.get(0));
 		return users;
 	}
-	
+	@SuppressWarnings({ "deprecation", "rawtypes" })
+	@Transactional
+	public Regis logincheck(Regis ud) {
+		
+		Session ses = sessionFactory.openSession();
+		Query qry = ses.createQuery("from Regis where userid=? and password=?");
+		qry.setLong(0, ud.getUserId());
+		qry.setString(1, ud.getPassword());
+		Regis validuser = (Regis)qry.uniqueResult();
+		//logger.debug("Valid user : " + validuser.getRole());
+		ses.close();
+		return validuser;
+		
+	}
 	
 
 }
