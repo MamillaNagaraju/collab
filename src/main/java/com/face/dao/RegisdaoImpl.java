@@ -24,6 +24,8 @@ public class RegisdaoImpl implements Regisdao{
 	
 	public void addUser(Regis user) {
 		Session session=sessionFactory.getCurrentSession();
+		 user.setRole("ROLE_USER");
+		 user.setEnabled(true);
 		session.saveOrUpdate(user);
 		
 	}
@@ -53,7 +55,8 @@ public class RegisdaoImpl implements Regisdao{
 		Session session=sessionFactory.getCurrentSession();
 		System.out.println("i am in user list update");
 		List<Regis> users=session.createQuery("from Regis").getResultList();
-		System.out.println(users.get(0));
+		
+		
 		return users;
 	}
 	@SuppressWarnings({ "deprecation", "rawtypes" })
@@ -68,7 +71,7 @@ public class RegisdaoImpl implements Regisdao{
 		//logger.debug("Valid user : " + validuser.getRole());
 		ses.close();
 		return validuser;
-		
+		 
 	}
 	
 

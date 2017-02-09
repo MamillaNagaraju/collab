@@ -32,18 +32,18 @@ public class Apptest {
 		Jobposdao blog=(Jobposdao) context.getBean("jobsdao");	
 		
 		Jobpos job=new Jobpos();
-		
-		job.setAddressOfTheCompany("hyd");
-		job.setCompany("techy");
-		job.setDateOfInterview("26dec2016");
-		job.setCtc("3lakh");
-		job.setEligibilityCriteria("btech");
-		job.setRole("user");
-		job.setSkillsRequired("java");
-		job.setUrlOfTheCompany("www.techy.com");
-		
-		
-		blog.addJob(job);
+//		
+////		job.setAddressOfTheCompany("hyd");
+////		job.setCompany("techy");
+////		job.setDateOfInterview("26dec2016");
+////		job.setCtc("3lakh");
+////		job.setEligibilityCriteria("btech");
+////		job.setRole("user");
+////		job.setSkillsRequired("java");
+////		job.setUrlOfTheCompany("www.techy.com");
+////		
+//		
+//		blog.addJob(job);
 		
 		
 }
